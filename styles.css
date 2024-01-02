@@ -98,3 +98,70 @@ span{
 .images:hover .me{
     left: 45%;
 }
+
+
+
+@media screen and (max-width: 440px){
+    nav{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }    
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 4px 4px;
+    }
+
+    .detail{
+        margin-left: 8%;
+        margin-top: 4%; 
+    }
+
+    .detail h1{
+        font-size: 30px;
+        color: #212121;
+        margin-bottom: 10px;
+    }
+
+    .detail a{
+        background: #212121;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        display: inline-block;
+        margin: 25px 0;
+        border-radius: 5px;
+    }
+
+    .images{
+        width: 25%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        right: 150px;
+    }
+    
+    .images img{
+        height: 100%;
+        position: absolute;
+        left: 60%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: bottom .5s, left .5s;
+    }
+    
+    
+    .images:hover .shape{
+        bottom: 30px;
+    }
+    
+    .images:hover .me{
+        left: 45%;
+    }
+}
